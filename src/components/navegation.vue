@@ -123,8 +123,9 @@ export default {
 
     signOut() {
       auth.signOut();
-      // this.$router.push({ name: "Home" });
-      window.location.reload();
+      this.$router.push({ name: "Home" });
+      // window.location.reload();
+      this.$store.commit("resetUser");
     },
   },
   computed: {

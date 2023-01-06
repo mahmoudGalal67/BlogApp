@@ -61,6 +61,9 @@ export default createStore({
         }
       });
     },
+    resetUser(state) {
+      state.user = {};
+    },
   },
   actions: {
     async setUser(state, user) {
